@@ -68,8 +68,6 @@ Contributing to configs-loader
 We welcome your ideas, issues, and pull requests. Just follow the
 usual/standard GitHub practices.
 
-TODOs
------
 
 License
 ===================
