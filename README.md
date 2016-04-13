@@ -15,7 +15,7 @@ Use Case:
 -------------------
 This plugin is helpful in the following use case :
 
-Lets assume we have config server **( CS )** and **( 20 )** microservices that uses it **( ms1, .... ms20 )**
+Lets assume we have config server **( CS )** and **( 20 )** microservices that uses it **( ms1 , .... , ms20 )**
 if we change some configurations in **( CS )** then when any of the microservices is restarted it'll pick up the new configs ( which might be unwanted behaviour in case we want the CS changes to affect just specific microservices **( temporarily )** not all of them ).
 
 With this plugin , the micro services will not pick thier configuration from config server at runtime , instead the plugin will pick up **CS** configurations , merge them with local configurations into one file **( all this at build time )** and the mircoservice will use this final merged file.
