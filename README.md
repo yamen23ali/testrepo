@@ -33,7 +33,7 @@ How to Use
 
 Just simply add the plugin to your pom.xml file , like the following :
 
-.. code-block:: bash
+.. code-block::
   <plugin>
     <groupId>org.zlounge.phoenix.plugins</groupId>
     <artifactId>configs-loader-plugin</artifactId>
