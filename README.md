@@ -24,7 +24,7 @@ So we can rebuild just the microservices we want them to pick up the new configs
 
 configs-loader Features:
 -------------------
-Multiple options support: config server url and credintials, local config file path, as parameters
+Multiple options support: 
 - Config server url and credintials.
 - Local config file path.
 - Final config file path.
