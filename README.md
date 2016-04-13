@@ -33,7 +33,7 @@ How to Use
 
 Just simply add the plugin to your pom.xml file , like the following :
 
-.. code-block::
+```xml
   <plugin>
     <groupId>org.zlounge.phoenix.plugins</groupId>
     <artifactId>configs-loader-plugin</artifactId>
@@ -57,6 +57,7 @@ Just simply add the plugin to your pom.xml file , like the following :
       </execution>
     </executions>
   </plugin>
+```
 
 Contributing to configs-loader
 ===============================
