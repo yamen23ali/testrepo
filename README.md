@@ -1,12 +1,12 @@
 # config-loader-maven-plugin
 
-This plugin will load configs from ( spring cloud config server ) and merge them with client ( application.yml ) file.
+This maven plugin will load configs from **( spring cloud config server )** and merge them with client **( application.yml )** file.
 So no client would be affected with config server changes unless its rebuilt again
 
 configs-loader
 =========
 
-Configs loader is a maven plugin that loads configs from ( spring cloud config server ) and merge them with application configs into one final config file ( application.yml ).
+Configs loader is a maven plugin that loads configs from **( spring cloud config server )** and merge them with application configs into one final config file **( application.yml )**.
 The main purpose of this plugin is :
 - Provide a full configuration file after the project is built .
 - Any spring cloud config server changes won't affect the spring application unless the application is built again .
@@ -15,9 +15,9 @@ Use Case:
 -------------------
 This plugin is helpful in the following use case :
 
-Lets assume we have config server ( CS ) and ( 20 ) microservices that uses it ( ms1, .... ms20 )
-if we change some configurations in ( CS ) then when any of the microservices is restarted it'll pick up the new configs ( which might be unwanted behaviour in case we want the CS changes to affect just specific microservices ( temporarily ) not all of them ).
-With this plugin , the micro services will not pick thier configuration from config server at runtime , instead the plugin will pick up CS configurations , merge them with local configurations into one file ( all this at build time ) and the mircoservice will use this final merged file.
+Lets assume we have config server **( CS )** and **( 20 )** microservices that uses it **( ms1, .... ms20 )**
+if we change some configurations in **( CS )** then when any of the microservices is restarted it'll pick up the new configs ( which might be unwanted behaviour in case we want the CS changes to affect just specific microservices **( temporarily )** not all of them ).
+With this plugin , the micro services will not pick thier configuration from config server at runtime , instead the plugin will pick up **CS** configurations , merge them with local configurations into one file **( all this at build time )** and the mircoservice will use this final merged file.
 So we can rebuild just the microservices we want them to pick up the new configs .
 
 configs-loader Features:
@@ -32,7 +32,7 @@ Multiple options support: config server url and credintials, local config file p
 How to Use
 ==========
 
-Just simply add the plugin to your pom.xml file , like the following :
+Just simply add the plugin to your **pom.xml** file , like the following :
 
 ```xml
   <plugin>
@@ -51,7 +51,7 @@ Just simply add the plugin to your pom.xml file , like the following :
 
     <executions>
       <execution>
-        <phase>clean</phase>
+        <phase> clean </phase>
         <goals>
           <goal>load</goal>
         </goals>
